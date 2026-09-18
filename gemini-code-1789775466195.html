@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Jurídico | Abril Iliana Olivera</title>
+    <!-- Importamos tipografías de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0F0F0F;
+            --accent-gold: #D4AF37;
+            --text-light: #F7F5EF;
+            --text-muted: #EBE1D6;
+            --card-bg: #1A1A1A;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-light);
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-gold);
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+            border-bottom: 1px solid #222;
+        }
+
+        header h4 {
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            max-width: 600px;
+            margin: 0 auto 25px;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: var(--bg-color);
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            opacity: 0.85;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        /* Bio Section */
+        .bio-content {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent-gold);
+        }
+
+        .bio-content p {
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        .matricula {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--accent-gold);
+            font-weight: 600;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .service-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-gold);
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Footer / Contact */
+        footer {
+            background-color: #080808;
+            text-align: center;
+            padding: 50px 20px;
+            border-top: 1px solid #222;
+        }
+
+        footer h2 {
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            color: var(--text-muted);
+            margin-bottom: 25px;
+        }
+
+        .footer-info {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header>
+        <h4>Estudio Jurídico Integral • Posadas, Misiones</h4>
+        <h1>Soluciones legales con rigor, estrategia y compromiso.</h1>
+        <p>Brindamos un abordaje jurídico profesional y personalizado para proteger tus derechos, tus bienes y tu tranquilidad en cada etapa.</p>
+        <a href="https://wa.me/5493764108554" class="cta-btn" target="_blank">Consultar por WhatsApp</a>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section>
+        <h2 class="section-title">Más que leyes, personas</h2>
+        <div class="bio-content">
+            <p>Hola, soy <strong>Abril Iliana Olivera</strong>. Fundé este estudio con la convicción de que el derecho debe ser una herramienta accesible, clara y resolutiva para las personas y las empresas.</p>
+            <p>Cada caso es único y merece un análisis minucioso. Mi compromiso es acompañarte con total confidencialidad, honestidad profesional y una sólida estrategia legal.</p>
+            <span class="matricula">Matrícula Provincial N° 6358 (Primera Circunscripción, Misiones)</span>
+        </div>
+    </section>
+
+    <!-- Áreas de Práctica -->
+    <section>
+        <h2 class="section-title">Áreas de Práctica</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Derecho Civil</h3>
+                <p>Contratos, daños y perjuicios, ejecuciones y resolución de conflictos entre particulares.</p>
+            </div>
+            <div class="service-card">
+                <h3>Derecho de Familia</h3>
+                <p>Divorcios, alimentos, régimen de comunicación y cuestiones sucesorias con un trato contenedor.</p>
+            </div>
+            <div class="service-card">
+                <h3>Derecho Laboral</h3>
+                <p>Asesoramiento a trabajadores y empleadores, despidos, reclamos indemnizatorios y negociaciones.</p>
+            </div>
+            <div class="service-card">
+                <h3>Derecho Comercial</h3>
+                <p>Constitución de sociedades, asesoramiento para PyMEs y contratos comerciales.</p>
+            </div>
+            <div class="service-card">
+                <h3>Sucesiones</h3>
+                <p>Tramitación de declaratorias de herederos, sucesiones testamentarias e intestadas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto / Footer -->
+    <footer>
+        <h2>¿Necesitás asesoramiento legal? Hablemos.</h2>
+        <p>Tu tranquilidad también es nuestra prioridad.</p>
+        <a href="https://wa.me/5493764108554" class="cta-btn" target="_blank">Iniciar Consulta por WhatsApp</a>
+        
+        <div class="footer-info">
+            <p>📍 Félix de Azara 2316, Posadas, Misiones, Argentina</p>
+            <p>✉️ abrilolivera.estudio@gmail.com | 📸 @abriloliveraabog</p>
+        </div>
+    </footer>
+
+</body>
+</html>
